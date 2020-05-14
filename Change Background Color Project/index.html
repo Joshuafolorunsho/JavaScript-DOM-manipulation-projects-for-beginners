@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Change Background Color Project</title>
-   <style>
-      html {
-         font-size: 20px;
-      }
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Change Background Color Project</title>
+		<style>
+			body {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				height: 100vh;
+				overflow-y: hidden;
+			}
 
-      body {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;    
-         height: 100vh;
-         overflow-y: hidden;  
-      }
+			.color-code {
+				font-weight: bold;
+				font-size: 2rem;
+			}
 
-      .color-code {
-         font-weight: bold;
-         font-size: 2rem;
-      }
+			button {
+				margin: 1rem 0;
+				padding: 1rem 3rem;
+				border-radius: 99999px;
+				cursor: pointer;
+				border: none;
+				font-size: inherit;
+			}
 
-
-      button {
-         margin: 1rem 0;
-         padding: 1rem 3rem;
-         border-radius: 99999px;
-         cursor: pointer;
-         border: none;
-         font-size: inherit;
-      }
-   </style>
-</head>
-<body>
-   <div class="color-code"></div>
-   <button>CLICK ME</button>
-   <script src="app.js"></script>
-</body>
+			@media (min-width: 768px) {
+				html {
+					font-size: 20px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="color-code"></div>
+		<button>Change Background</button>
+		<script src="app.js"></script>
+	</body>
 </html>
