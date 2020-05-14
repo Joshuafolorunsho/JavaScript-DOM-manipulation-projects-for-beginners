@@ -1,0 +1,1 @@
+## Awesome JavaScript projects for beginners
